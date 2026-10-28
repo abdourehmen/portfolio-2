@@ -1,12 +1,3 @@
-import type {
-  TNavLink,
-  TService,
-  TTechnology,
-  TExperience,
-  TTestimonial,
-  TProject,
-} from "../types";
-
 import {
   mobile,
   backend,
@@ -17,7 +8,6 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
@@ -25,16 +15,15 @@ import {
   figma,
   docker,
   meta,
+  shopify,
   starbucks,
   tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  yancapImage,
+  agkameImage,
+  zrbikeImage,
 } from "../assets";
 
-export const navLinks: TNavLink[] = [
+export const navLinks = [
   {
     id: "about",
     title: "About",
@@ -49,26 +38,26 @@ export const navLinks: TNavLink[] = [
   },
 ];
 
-const services: TService[] = [
+const services = [
   {
     title: "Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React & Frontend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "E-Commerce Architect",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "UI/UX & 3D Enthusiast",
     icon: creator,
   },
 ];
 
-const technologies: TTechnology[] = [
+const technologies = [
   {
     name: "HTML 5",
     icon: html,
@@ -90,10 +79,6 @@ const technologies: TTechnology[] = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -104,10 +89,6 @@ const technologies: TTechnology[] = [
   {
     name: "MongoDB",
     icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -123,142 +104,86 @@ const technologies: TTechnology[] = [
   },
 ];
 
-const experiences: TExperience[] = [
+const experiences = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
+    title: "Full-Stack Web Developer",
+    companyName: "Freelance & E-Commerce Projects",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing custom e-commerce web applications, frontend user interfaces, and digital store architectures.",
+      "Building full-stack stores like AGKAME and zr-bike-shop featuring responsive layouts, Supabase database synchronization, and regional shipping calculators.",
+      "Implementing interactive user experiences with modern frameworks including React, Vite, and Tailwind CSS.",
+      "Optimizing web applications for performance, deployment on Vercel, and Google Search Console indexing.",
     ],
   },
 ];
 
-const testimonials: TTestimonial[] = [
+const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Working with Abdourehmen was a fantastic experience. His attention to detail in building modern e-commerce interfaces is top-notch.",
+
+ 
+   
   },
 ];
 
-const projects: TProject[] = [
+const projects = [
   {
-    name: "Car Rent",
+    name: "Yancap Store",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A verified e-commerce digital platform with automated domain configuration and optimized Google Search Console indexing for seamless regional performance.",
+    tags: [
+      {
+        name: "e-commerce",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "seo",
+        color: "green-text-gradient",
+      },
+      {
+        name: "web",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: yancapImage,
+    sourceCodeLink: "https://github.com/abdourehmen",
+  },
+  {
+    name: "AGKAME Store",
+    description:
+      "An advanced e-commerce web application for electronic games, digital subscriptions, consoles, accessories, and anime figurines featuring multi-column layouts and regional shipping.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
       },
       {
         name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "supabase",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: agkameImage,
+    sourceCodeLink: "https://github.com/abdourehmen",
   },
   {
-    name: "Job IT",
+    name: "ZR Bike Shop",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A full-stack e-commerce store for bicycles and accessories equipped with custom image-gallery navigation modals, WhatsApp ordering flow, and an administration dashboard.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
@@ -266,8 +191,8 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: zrbikeImage,
+    sourceCodeLink: "https://github.com/abdourehmen",
   },
 ];
 

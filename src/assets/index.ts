@@ -1,4 +1,4 @@
-import logo from "./logo.png";
+import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -26,9 +26,10 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+// استيراد صور مشاريعك الحقيقية بصيغة .jpg
+import yancapImage from "./yancap.jpg";
+import agkameImage from "./akgame.jpg";
+import zrbikeImage from "./zrbike.jpg";
 
 export {
   logo,
@@ -56,7 +57,7 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  yancapImage,
+  agkameImage,
+  zrbikeImage,
 };
